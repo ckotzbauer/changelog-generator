@@ -79,7 +79,7 @@ function buildChangelog(rev) {
 
         rawCommits = _.sortBy(rawCommits, ["category", "timestamp"]);
 
-        const template = fs.readFileSync('./version.mustache', 'utf8');
+        const template = fs.readFileSync(path.resolve(__dirname, 'version.mustache'), 'utf8');
         const rendered = Mustache.render(template, { commits: rawCommits, version: version, date: new Date().toISOString().substr(0, 10) });
 
         prependFile.sync(path.resolve(dir, "CHANGELOG.md"), rendered);

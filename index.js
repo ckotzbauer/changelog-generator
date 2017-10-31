@@ -56,14 +56,14 @@ simpleGit(dir).tags((err, tags) => {
     }
 
     const t = tags.all;
-    const ref = t.length === 0 ? "HEAD" : `${t[0]}..HEAD`;
+    const rev = t.length === 0 ? "HEAD" : `${t[0]}..HEAD`;
 
-    buildChangelog(ref);
+    buildChangelog(rev);
 });
 
 function buildChangelog(rev) {
     gitCommits(repoPath, {
-        rev: ref
+        rev: rev
     }).on('data', (commit) => {
         if (commit.title.indexOf("Merge branch") === -1 && commit.title.indexOf("Merge remote-tracking branch") === -1) {
             rawCommits.push({ hash: commit.hash.substr(0, 8), title: commit.title, timestamp: commit.author.timestamp });

@@ -71,6 +71,10 @@ function buildChangelog(rev) {
     }).on('error', (err) => {
         throw err;
     }).on('end', () => {
+        if (rawCommits.length === 0) {
+            return;
+        }
+
         _.each(rawCommits, (commit) => {
             const c = reformatCommit(commit);
             commit.title = c.message;

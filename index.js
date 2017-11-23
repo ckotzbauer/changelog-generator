@@ -56,7 +56,7 @@ simpleGit(dir).tags((err, tags) => {
     }
 
     const t = tags.all;
-    const rev = t.length === 0 ? "HEAD" : `${t[0]}..HEAD`;
+    const rev = t.length === 0 ? "HEAD" : `${t[t.length - 1]}..HEAD`;
 
     buildChangelog(rev);
 });

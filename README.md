@@ -12,6 +12,7 @@ Options:
   --release-date <date>        date of release to build (default: "<current date>")
   --release-version <version>  version of release
   -f, --file <file>            path of changelog file (default: "CHANGELOG.md")
+  --commit-output <file>       path of commit-list file
   -r, --repository <repo>      path of git repository (default: "<cwd>")
   -n, --notable-changes        insert notable changes block (default: false)
   --github-handle <handle>     github org-repo handle

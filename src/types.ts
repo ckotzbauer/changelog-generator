@@ -32,6 +32,7 @@ export interface Options {
     releaseDate: string;
     releaseVersion: string;
     file: string;
+    commitOutput: string;
     repository: string;
     notableChanges: boolean;
     githubHandle: string;

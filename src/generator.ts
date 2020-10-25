@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import { readFile } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 import prependFile from 'prepend-file';
 import simpleGit from 'simple-git';
 import { Commit, ChangelogItem, Options } from './types';
@@ -71,15 +71,20 @@ export const generate: (o: Options) => Promise<void> = async function (o: Option
         });
 
         const template = await readFile(resolve(__dirname, '..', `${o.template}.mustache`), 'utf8');
-        const rendered = Mustache.render(template, {
+        const placeholder = {
             items,
             version: o.releaseVersion,
             date: o.releaseDate,
             notableChanges: o.notableChanges,
             githubHandle: o.githubHandle
-        });
+        };
 
-        await prependFile(resolve(o.repository, o.file), rendered);
+        await prependFile(resolve(o.repository, o.file), Mustache.render(template, placeholder));
+
+        if (o.commitOutput) {
+            placeholder.version = null;
+            await writeFile(resolve(o.repository, o.commitOutput), Mustache.render(template, placeholder), { encoding: 'utf8', flag: "w" });
+        }
     } catch (err) {
         throw err;
     }

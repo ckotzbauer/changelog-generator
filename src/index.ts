@@ -14,6 +14,7 @@ program
     .option('--release-date <date>', 'date of release to build', new Date().toISOString().substr(0, 10))
     .option('--release-version <version>', 'version of release')
     .option('-f, --file <file>', 'path of changelog file', 'CHANGELOG.md')
+    .option('--commit-output <file>', 'path of commit-list file')
     .option('-r, --repository <repo>', 'path of git repository', process.cwd())
     .option('-n, --notable-changes', 'insert notable changes block', false)
     .option('--github-handle <handle>', 'github org-repo handle');

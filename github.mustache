@@ -1,0 +1,20 @@
+
+## Version {{version}} ({{date}})
+{{#notableChanges}}
+
+### Notable Changes
+
+* **topic**:
+  - Additional notes
+{{/notableChanges}}
+
+### Commits
+
+{{#items}}
+{{#githubHandle}}
+* [[`{{hash}}`](https://github.com/{{githubHandle}}/commit/{{hash}})] - **{{category}}**: {{title}}
+{{/githubHandle}}
+{{^githubHandle}}
+* [`{{hash}}`] - **{{category}}**: {{title}}
+{{/githubHandle}}
+{{/items}}

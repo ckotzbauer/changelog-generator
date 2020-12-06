@@ -1,6 +1,8 @@
 
 # Changelog Generator
 
+![build](https://github.com/ckotzbauer/changelog-generator/workflows/build/badge.svg)
+
 ```
 $ changelog-generator
 Usage: changelog-generator [options]

@@ -1,24 +1,3 @@
-
-export interface Commit {
-    parents: string[],
-    hash: string,
-    tree: string,
-    author: {
-        name: string,
-        email: string,
-        timestamp: number,
-        timezone: string
-    },
-    committer: {
-        name: string,
-        email: string,
-        timestamp: number,
-        timezone: string
-    },
-    title: string,
-    description: string
-}
-
 export interface ChangelogItem {
     hash: string,
     title: string,

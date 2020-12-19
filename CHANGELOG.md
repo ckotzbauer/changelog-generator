@@ -1,3 +1,17 @@
+## Version 2.2.0 (2020-12-19)
+
+* [[`c15e8109`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/c15e8109)] - **chore**: 
+* [[`c4fd47ba`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/c4fd47ba)] - **chore**: 
+* [[`275781dd`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/275781dd)] - **chore**: 
+* [[`7da00da5`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/7da00da5)] - **chore**: 
+* [[`3ba96a51`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/3ba96a51)] - **chore**: change automerge policy
+* [[`18048fcf`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/18048fcf)] - **chore**: update dependency typescript to v4.1.3
+* [[`d23a7340`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/d23a7340)] - **chore**: Bump actions&#x2F;setup-node from v2.1.2 to v2.1.3
+* [[`85305b75`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/85305b75)] - **chore**: update dependency @types&#x2F;node to v14.14.12
+* [[`b7b36056`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/b7b36056)] - **chore**: release 2.1.1
+* [[`de977f1e`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/de977f1e)] - **fix**: use sinple-git for commit listing
+* [[`50ff7e12`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/50ff7e12)] - **fix**: update dependency simple-git to ~2.27.0
+* [[`71a7fdf0`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/71a7fdf0)] - **fix**: update dependency simple-git to ~2.26.0
 ## Version 2.1.1 (2020-12-09)
 
 * [[`de83a05e`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/de83a05e)] - **chore**: fix release-workflow

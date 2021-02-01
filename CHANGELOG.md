@@ -1,3 +1,7 @@
+## Version 2.3.1 (2021-02-01)
+
+No changes. Re-published npm package
+
 ## Version 2.3.0 (2021-02-01)
 
 * [[`739c4dfc`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/739c4dfc)] - **build**: promote release on master

@@ -63,10 +63,6 @@ export const generate: (o: Options) => Promise<void> = async function (o: Option
         const from = t.length === 0 ? null : t[t.length - 1];
         let items: ChangelogItem[] = await fetchChangelogItems(git, from, o.ascending);
 
-        if (items.length === 0) {
-            return;
-        }
-
         const template = await readFile(resolve(__dirname, '..', `${o.template}.mustache`), 'utf8');
         const placeholder = {
             items,

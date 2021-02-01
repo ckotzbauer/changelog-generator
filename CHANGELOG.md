@@ -1,3 +1,21 @@
+## Version 2.3.0 (2021-02-01)
+
+* [[`739c4dfc`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/739c4dfc)] - **build**: promote release on master
+* [[`49534b97`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/49534b97)] - **build(deps)**: bump pascalgn&#x2F;size-label-action
+* [[`27f68654`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/27f68654)] - **chore**: update dependency @types&#x2F;mustache to v4.1.1 (#24)
+* [[`824e1481`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/824e1481)] - **chore**: update dependency @types&#x2F;node to v14.14.22 (#25)
+* [[`b56f7827`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/b56f7827)] - **chore**: Merge pull request #23 from ckotzbauer&#x2F;dependabot&#x2F;github_actions&#x2F;pascalgn&#x2F;size-label-action-cdbe57c421bcd58ecfb528fa36325faf11e032a9
+* [[`80bed5fb`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/80bed5fb)] - **chore**: update dependency @types&#x2F;node to v14.14.17 (#21)
+* [[`29f64f18`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/29f64f18)] - **chore**: several automation improvements
+* [[`727fde30`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/727fde30)] - **chore**: update dependency @types&#x2F;node to v14.14.16 (#20)
+* [[`2f65dc08`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/2f65dc08)] - **chore**: change create-default-labels action
+* [[`eab88cfe`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/eab88cfe)] - **chore**: use renovate-preset
+* [[`701d07d0`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/701d07d0)] - **chore**: Bump pascalgn&#x2F;automerge-action (#19)
+* [[`272e5f6d`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/272e5f6d)] - **chore**: release 2.2.0
+* [[`317162bb`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/317162bb)] - **fix**: use program.opts() to access option values
+* [[`26a32dc8`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/26a32dc8)] - **fix**: update dependency commander to v7
+* [[`1510362a`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/1510362a)] - **security**: added synk-scan
+
 ## Version 2.2.0 (2020-12-19)
 
 * [[`c15e8109`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/c15e8109)] - **chore**: 

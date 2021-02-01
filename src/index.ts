@@ -21,8 +21,8 @@ program
 
 program.parse(process.argv);
 
-if (!program.releaseVersion) {
-    program.releaseVersion = require(resolve(`${program.repository}/package.json`)).version;
+if (!program.opts().releaseVersion) {
+    program.opts().releaseVersion = require(resolve(`${program.opts().repository}/package.json`)).version;
 }
 
 generate(program.opts() as Options);

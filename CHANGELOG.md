@@ -1,3 +1,8 @@
+## Version 2.3.2 (2021-02-01)
+
+* [[`5bb61ac1`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5bb61ac1)] - **chore**: release 2.3.1
+* [[`8aff7383`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/8aff7383)] - **fix**: do not exit too early
+
 ## Version 2.3.1 (2021-02-01)
 
 No changes. Re-published npm package

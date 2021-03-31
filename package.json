@@ -19,7 +19,7 @@
     "commander": "~7.1.0",
     "mustache": "~4.1.0",
     "prepend-file": "~2.0.0",
-    "simple-git": "~2.35.0"
+    "simple-git": "~2.37.0"
   },
   "devDependencies": {
     "@types/mustache": "4.1.1",

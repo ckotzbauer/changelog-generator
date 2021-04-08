@@ -2,8 +2,48 @@ import { resolve } from 'path';
 import { readFile, writeFile } from 'fs/promises';
 import prependFile from 'prepend-file';
 import simpleGit, { SimpleGit } from 'simple-git';
-import { ChangelogItem, Options } from './types';
+import { ChangelogItem, GroupedItems, Options } from './types';
 import Mustache from 'mustache';
+
+const group = (arr: ChangelogItem[]): GroupedItems[] => {
+    return arr.reduce((rv: GroupedItems[], item: ChangelogItem) => {
+        const groupIndex = rv.findIndex(x => x.group.order == item.group.order);
+        
+        if (groupIndex !== -1) {
+            rv[groupIndex].items.push(item);
+        } else {
+            rv.push({ items: [item], group: item.group });
+        }
+
+        return rv;
+    }, []);
+};
+
+const getCategoryHeadline: (category: string) => { order: number, header: string } = (category: string): { order: number, header: string } => {
+    switch (category) {
+        case "feat":
+        case "feature":
+        case "perf":
+            return { order: 1, header: "Features and improvements" };
+        case "fix":
+            return { order: 2, header: "Bug fixes" };
+        case "clean":
+        case "cleanup":
+        case "refactor":
+            return { order: 3, header: "Cleanup and refactoring" };
+        case "build":
+        case "test":
+        case "tests":
+            return { order: 4, header: "Build and testing" };
+        case "doc":
+        case "docs":
+            return { order: 5, header: "Documentation" };
+        case "deps":
+            return { order: 6, header: "Dependency updates" };
+        default:
+            return { order: 99, header: "Common changes" };
+    }
+};
 
 const reformatCommit: (m: string) => { title: string, category: string } = (message: string): { title: string, category: string } => {
     let index = message.indexOf(':');
@@ -21,12 +61,19 @@ const reformatCommit: (m: string) => { title: string, category: string } = (mess
         title = message.trim();
     }
 
+    const startIndex = category.indexOf("(");
+    const endIndex = category.indexOf(")");
+
+    if (startIndex !== -1 && endIndex !== -1) {
+        category = category.substring(startIndex + 1, endIndex);
+    }
+
     return { title, category };
 }
 
-const fetchChangelogItems: (git: SimpleGit, from: string, asc: boolean) => Promise<ChangelogItem[]> = async function (git: SimpleGit, from: string, asc: boolean): Promise<ChangelogItem[]> {
+const fetchChangelogItems: (git: SimpleGit, from: string, asc: boolean) => Promise<GroupedItems[]> = async function (git: SimpleGit, from: string, asc: boolean): Promise<GroupedItems[]> {
     const commits = await git.log({ to: "HEAD", from });
-    return commits.all
+    const items = commits.all
         .map(commit => {
             if (commit.message.indexOf('Merge branch') === -1 && commit.message.indexOf('Merge remote-tracking branch') === -1) {
                 const { title, category } = reformatCommit(commit.message);
@@ -34,6 +81,7 @@ const fetchChangelogItems: (git: SimpleGit, from: string, asc: boolean) => Promi
                     hash: commit.hash.substr(0, 8),
                     title,
                     category,
+                    group: getCategoryHeadline(category),
                     timestamp: new Date(commit.date).getMilliseconds()
                 };
             }
@@ -52,6 +100,7 @@ const fetchChangelogItems: (git: SimpleGit, from: string, asc: boolean) => Promi
                 return b.timestamp - a.timestamp;
             }
         });
+    return group(items).sort((a: GroupedItems, b: GroupedItems) => a.group.order - b.group.order);
 };
 
 export const generate: (o: Options) => Promise<void> = async function (o: Options): Promise<void> {
@@ -61,11 +110,11 @@ export const generate: (o: Options) => Promise<void> = async function (o: Option
         const tags = await git.tags();
         const t = tags.all;
         const from = t.length === 0 ? null : t[t.length - 1];
-        let items: ChangelogItem[] = await fetchChangelogItems(git, from, o.ascending);
+        let groups: GroupedItems[] = await fetchChangelogItems(git, from, o.ascending);
 
         const template = await readFile(resolve(__dirname, '..', `${o.template}.mustache`), 'utf8');
         const placeholder = {
-            items,
+            groups,
             version: o.releaseVersion,
             date: o.releaseDate,
             notableChanges: o.notableChanges,

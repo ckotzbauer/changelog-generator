@@ -3,6 +3,17 @@ export interface ChangelogItem {
     title: string,
     timestamp: number,
     category: string
+    group: Group;
+}
+
+export interface Group {
+    order: number;
+    header: string;
+}
+
+export interface GroupedItems {
+    group: Group;
+    items: ChangelogItem[];
 }
 
 export interface Options {

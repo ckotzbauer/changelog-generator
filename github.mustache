@@ -11,6 +11,9 @@
 ### Commits
 {{/notableChanges}}
 
+{{#groups}}
+### {{group.header}}
+
 {{#items}}
 {{#githubHandle}}
 * [[`{{hash}}`](https://github.com/{{githubHandle}}/commit/{{hash}})] - **{{category}}**: {{title}}
@@ -19,4 +22,6 @@
 * [`{{hash}}`] - **{{category}}**: {{title}}
 {{/githubHandle}}
 {{/items}}
+
+{{/groups}}
 

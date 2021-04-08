@@ -1,3 +1,10 @@
+## Version 2.4.1 (2021-04-08)
+
+### Features and improvements
+
+* [[`16b610d3`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/16b610d3)] - **feat**: add security keyword
+
+
 ## Version 2.4.0 (2021-04-08)
 
 * [[`56c8c953`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/56c8c953)] - **build(deps)**: bump actions&#x2F;setup-node from v2.1.4 to v2.1.5

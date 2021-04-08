@@ -38,8 +38,10 @@ const getCategoryHeadline: (category: string) => { order: number, header: string
         case "doc":
         case "docs":
             return { order: 5, header: "Documentation" };
+        case "security":
+            return { order: 6, header: "Security" };
         case "deps":
-            return { order: 6, header: "Dependency updates" };
+            return { order: 7, header: "Dependency updates" };
         default:
             return { order: 99, header: "Common changes" };
     }

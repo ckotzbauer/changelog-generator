@@ -1,3 +1,18 @@
+## Version 2.4.0 (2021-04-08)
+
+* [[`56c8c953`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/56c8c953)] - **build(deps)**: bump actions&#x2F;setup-node from v2.1.4 to v2.1.5
+* [[`b47ecc23`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/b47ecc23)] - **build(deps)**: bump pascalgn&#x2F;automerge-action
+* [[`744d9435`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/744d9435)] - **chore**: update dependency @types&#x2F;node to v14.14.37 (#33)
+* [[`e4ef3b65`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e4ef3b65)] - **chore**: update dependency typescript to v4.2.3 (#34)
+* [[`5a405363`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5a405363)] - **chore**: update dependency @types&#x2F;node to v14.14.31 (#29)
+* [[`35c7d2ba`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/35c7d2ba)] - **chore**: update dependency typescript to v4.2.2 (#30)
+* [[`12e96504`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/12e96504)] - **feat**: add commit grouping
+* [[`807b802a`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/807b802a)] - **fix**: update dependency commander to ~7.2.0 (#35)
+* [[`23aea99f`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/23aea99f)] - **fix**: update dependency mustache to ~4.2.0 (#36)
+* [[`2af19f81`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/2af19f81)] - **fix**: update dependency simple-git to ~2.37.0 (#37)
+* [[`253c0f80`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/253c0f80)] - **fix**: update dependency commander to ~7.1.0 (#31)
+* [[`3f7ace60`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/3f7ace60)] - **fix**: update dependency simple-git to ~2.35.0 (#32)
+
 ## Version 2.3.2 (2021-02-01)
 
 * [[`5bb61ac1`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5bb61ac1)] - **chore**: release 2.3.1

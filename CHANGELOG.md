@@ -1,3 +1,10 @@
+## Version 2.4.2 (2021-04-09)
+
+### Build and testing
+
+* [[`bb6c6d9c`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/bb6c6d9c)] - **test**: add unit-tests
+
+
 ## Version 2.4.1 (2021-04-08)
 
 ### Features and improvements

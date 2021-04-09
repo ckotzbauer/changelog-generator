@@ -19,7 +19,7 @@ const group = (arr: ChangelogItem[]): GroupedItems[] => {
     }, []);
 };
 
-const getCategoryHeadline: (category: string) => { order: number, header: string } = (category: string): { order: number, header: string } => {
+export const getCategoryHeadline: (category: string) => { order: number, header: string } = (category: string): { order: number, header: string } => {
     switch (category) {
         case "feat":
         case "feature":
@@ -47,7 +47,7 @@ const getCategoryHeadline: (category: string) => { order: number, header: string
     }
 };
 
-const reformatCommit: (m: string) => { title: string, category: string } = (message: string): { title: string, category: string } => {
+export const reformatCommit: (m: string) => { title: string, category: string } = (message: string): { title: string, category: string } => {
     let index = message.indexOf(':');
     let category = 'chore';
     let title = '';

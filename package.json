@@ -21,7 +21,7 @@
     "commander": "~7.2.0",
     "mustache": "~4.2.0",
     "prepend-file": "~2.0.0",
-    "simple-git": "~2.38.0"
+    "simple-git": "~2.39.0"
   },
   "devDependencies": {
     "@types/jest": "26.0.23",

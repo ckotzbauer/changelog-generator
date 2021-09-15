@@ -36,6 +36,13 @@ describe("generator", () => {
             expect(formatted.category).toEqual("security");
             expect(formatted.title).toEqual("deep package update");
         });
+
+        it("should be case-insensitive", () => {
+            const commit = "Security: deep package update";
+            const formatted = reformatCommit(commit);
+            expect(formatted.category).toEqual("security");
+            expect(formatted.title).toEqual("deep package update");
+        });
     });
 
     describe("getCategoryHeadline", () => {
@@ -69,6 +76,13 @@ describe("generator", () => {
 
         it("should return correct group - 5", () => {
             const commit = "security: deep package update";
+            const formatted = reformatCommit(commit);
+            const group = getCategoryHeadline(formatted.category);
+            expect(group.order).toEqual(6);
+        });
+
+        it("should be case-insensitive", () => {
+            const commit = "Security: deep package update";
             const formatted = reformatCommit(commit);
             const group = getCategoryHeadline(formatted.category);
             expect(group.order).toEqual(6);

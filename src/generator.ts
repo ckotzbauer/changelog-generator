@@ -70,7 +70,7 @@ export const reformatCommit: (m: string) => { title: string, category: string } 
         category = category.substring(startIndex + 1, endIndex);
     }
 
-    return { title, category };
+    return { title, category: category.toLowerCase() };
 }
 
 const fetchChangelogItems: (git: SimpleGit, from: string, asc: boolean) => Promise<GroupedItems[]> = async function (git: SimpleGit, from: string, asc: boolean): Promise<GroupedItems[]> {

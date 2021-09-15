@@ -1,3 +1,19 @@
+## Version 2.4.4 (2021-09-15)
+
+### Bug fixes
+
+* [[`066cb05b`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/066cb05b)] - **fix**: be case-insensitive on commit-messages
+
+### Dependency updates
+
+* [[`e1f05775`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e1f05775)] - **deps**: bump pascalgn&#x2F;automerge-action from 0.14.2 to 0.14.3
+
+### Common changes
+
+* [[`bc916cac`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/bc916cac)] - **chore**: add kind&#x2F;question label
+* [[`8e6a3c10`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/8e6a3c10)] - **chore**: change default branch to main
+
+
 ## Version 2.4.3 (2021-09-02)
 
 ### Build and testing

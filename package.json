@@ -24,7 +24,7 @@
     "simple-git": "~2.46.0"
   },
   "devDependencies": {
-    "@types/jest": "~27.0.1",
+    "@types/jest": "27.0.2",
     "@types/mustache": "4.1.2",
     "@types/node": "14.17.14",
     "jest": "27.2.4",

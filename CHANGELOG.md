@@ -1,3 +1,37 @@
+## Version 2.5.0 (2021-12-01)
+
+### Build and testing
+
+* [[`92f5a517`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/92f5a517)] - **build**: update npm lockfileVersion
+* [[`cfc35ec2`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/cfc35ec2)] - **build**: update to node@16
+* [[`e01da3ce`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e01da3ce)] - **build**: update to node@16
+
+### Dependency updates
+
+* [[`74b84429`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/74b84429)] - **deps**: update dependency @types&#x2F;node to v16.11.11
+* [[`8726f632`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/8726f632)] - **deps**: update jest monorepo (#98)
+* [[`19ef52e8`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/19ef52e8)] - **deps**: update dependency typescript to v4.5.2 (#99)
+* [[`e7b3bd2c`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e7b3bd2c)] - **deps**: bump actions&#x2F;setup-node from 2.4.1 to 2.5.0
+* [[`96620007`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/96620007)] - **deps**: update dependency typescript to v4.4.4
+* [[`ad209003`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/ad209003)] - **deps**: update dependency jest to v27.3.1
+* [[`c6e31e14`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/c6e31e14)] - **deps**: update dependency ts-jest to v27.0.7
+* [[`f8c2efe9`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/f8c2efe9)] - **deps**: update dependency commander to ~8.3.0
+* [[`06da71fb`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/06da71fb)] - **deps**: update dependency simple-git to ~2.47.0
+* [[`03aaa764`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/03aaa764)] - **deps**: update dependency @types&#x2F;node to v16
+* [[`dd812894`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/dd812894)] - **deps**: update dependency @types&#x2F;node to v14.17.20 (#84)
+* [[`177bc3ff`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/177bc3ff)] - **deps**: pin dependency ts-jest to 27.0.5
+* [[`d52ba189`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/d52ba189)] - **deps**: update dependency @types&#x2F;jest to v27.0.2 (#83)
+* [[`10714ac1`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/10714ac1)] - **deps**: update dependency typescript to v4.4.3 (#85)
+* [[`583b8104`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/583b8104)] - **deps**: update dependency commander to ~8.2.0 (#86)
+* [[`c37ec325`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/c37ec325)] - **deps**: update dependency jest to v27.2.4 (#87)
+* [[`11b65adb`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/11b65adb)] - **deps**: update dependency simple-git to ~2.46.0 (#88)
+* [[`5f55dcfc`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5f55dcfc)] - **deps**: bump actions&#x2F;setup-node from 2.4.0 to 2.4.1
+
+### Common changes
+
+* [[`6e1f468c`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/6e1f468c)] - **chore**: use label-command-action@v1
+
+
 ## Version 2.4.5 (2021-09-22)
 
 

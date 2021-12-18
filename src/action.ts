@@ -14,7 +14,7 @@ async function run() {
             commitOutput: core.getInput("commit-output"),
             repository: core.getInput("repository") || process.cwd(),
             notableChanges: core.getBooleanInput("notable-changes"),
-            githubHandle: core.getInput("github-handle")
+            githubHandle: core.getInput("github-handle", { required: true })
         };
 
         await generate(options);

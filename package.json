@@ -14,7 +14,7 @@
     "start": "node bin/changelog-generator",
     "build": "tsc --build tsconfig.json",
     "test": "jest --config jest.json",
-    "package": "ncc build src/index.ts -o dist-action"
+    "package": "ncc build src/action.ts -o dist-action"
   },
   "author": "",
   "license": "ISC",

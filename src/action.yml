@@ -1,0 +1,41 @@
+name: 'Changelog Generator'
+description: 'Generates changelogs for personal projects'
+inputs:
+  template:
+    description: 'template to use'
+    default: "github"
+    required: false
+  ascending:
+    description: 'sort commits ascending by date'
+    default: "false"
+    required: false
+  release-date:
+    description: 'date of release to build'
+    required: false
+  release-version:
+    description: 'version of release'
+    required: true
+  file:
+    description: 'path of changelog file'
+    default: "CHANGELOG.md"
+    required: false
+  commit-output:
+    description: 'path of commit-list file'
+    default: ""
+    required: false
+  repository:
+    description: 'path of git repository'
+    required: true
+  notable-changes:
+    description: 'insert notable changes block'
+    default: "false"
+    required: false
+  github-handle:
+    description: 'github org-repo handle'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist-action/index.js'
+branding:
+  icon: 'search'  
+  color: 'gray-dark'

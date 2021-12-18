@@ -1,3 +1,19 @@
+## Version 2.6.0 (2021-12-18)
+
+### Features and improvements
+
+* [[`e0a397a5`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e0a397a5)] - **feat**: add initial action
+
+### Bug fixes
+
+* [[`46783077`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/46783077)] - **fix**: compile correct file
+* [[`5fff2bb8`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5fff2bb8)] - **fix**: move action.yml
+
+### Common changes
+
+* [[`b053038c`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/b053038c)] - **chore**: use other pull_request_target trigger
+
+
 ## Version 2.5.0 (2021-12-01)
 
 ### Build and testing

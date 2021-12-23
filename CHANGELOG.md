@@ -1,3 +1,6 @@
+## Version 2.7.0 (2021-12-23)
+
+
 ## Version 2.6.0 (2021-12-18)
 
 ### Features and improvements

@@ -77,7 +77,7 @@ const fetchChangelogItems: (git: SimpleGit, from: string, asc: boolean) => Promi
     const commits = await git.log({ to: "HEAD", from });
     const items = commits.all
         .map(commit => {
-            if (commit.message.indexOf('Merge branch') === -1 && commit.message.indexOf('Merge remote-tracking branch') === -1) {
+            if (commit.message.indexOf('Merge pull request') === -1 && commit.message.indexOf('Merge branch') === -1 && commit.message.indexOf('Merge remote-tracking branch') === -1) {
                 const { title, category } = reformatCommit(commit.message);
                 return {
                     hash: commit.hash.substr(0, 8),

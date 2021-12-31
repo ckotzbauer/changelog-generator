@@ -1,3 +1,10 @@
+## Version 2.7.2 (2021-12-31)
+
+### Build and testing
+
+* [[`417912fc`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/417912fc)] - **build**: also publish package
+
+
 ## Version 2.7.1 (2021-12-31)
 
 ### Build and testing

@@ -1,3 +1,15 @@
+## Version 2.7.1 (2021-12-31)
+
+### Build and testing
+
+* [[`a68feb47`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/a68feb47)] - **build**: update release-workflow
+* [[`f701f80a`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/f701f80a)] - **build**: use new release-workflow
+
+### Dependency updates
+
+* [[`061bed72`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/061bed72)] - **deps**: bump actions&#x2F;setup-node from 2.5.0 to 2.5.1
+
+
 ## Version 2.7.0 (2021-12-23)
 
 

@@ -17,7 +17,7 @@ jobs:
         npm ci
         npm run package
         npm test
-      artifact-path: dist/
+      artifact-path: dist-action/
       npm: true
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}

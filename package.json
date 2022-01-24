@@ -2,7 +2,7 @@
   "name": "@code-chris/changelog-generator",
   "version": "2.7.2",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist-action/index.js",
   "bin": {
     "changelog-generator": "bin/changelog-generator"
   },

@@ -15,7 +15,7 @@ jobs:
       version: ${{ github.event.inputs.version }}
       build-commands: |
         npm ci
-        npm run build
+        npm run package
         npm test
       artifact-path: dist/
       npm: true

@@ -1,3 +1,21 @@
+## Version 2.7.3 (2022-01-24)
+
+### Dependency updates
+
+* [[`50f243db`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/50f243db)] - **deps**: pin dependency @zeit&#x2F;ncc to 0.22.3 (#102)
+* [[`f7ef2a84`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/f7ef2a84)] - **deps**: update dependency ts-jest to v27.1.2 (#106)
+* [[`e2eabfdf`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e2eabfdf)] - **deps**: update dependency @types&#x2F;node to v16.11.17 (#103)
+* [[`3eb3c89a`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/3eb3c89a)] - **deps**: update dependency typescript to v4.5.4 (#104)
+* [[`53b43e6d`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/53b43e6d)] - **deps**: update dependency simple-git to ~2.48.0 (#105)
+* [[`615d8952`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/615d8952)] - **deps**: update jest monorepo (#107)
+
+### Common changes
+
+* [[`5d920027`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5d920027)] - **chore**: Update release.yml
+* [[`395c59d3`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/395c59d3)] - **chore**: Update package.json
+* [[`0d8caedb`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/0d8caedb)] - **chore**: Update release.yml
+
+
 ## Version 2.7.2 (2021-12-31)
 
 ### Build and testing

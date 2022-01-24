@@ -1725,7 +1725,7 @@ const fetchChangelogItems = async function (git, from, asc) {
     const commits = await git.log({ to: "HEAD", from });
     const items = commits.all
         .map(commit => {
-        if (commit.message.indexOf('Merge branch') === -1 && commit.message.indexOf('Merge remote-tracking branch') === -1) {
+        if (commit.message.indexOf('Merge pull request') === -1 && commit.message.indexOf('Merge branch') === -1 && commit.message.indexOf('Merge remote-tracking branch') === -1) {
             const { title, category } = (0, exports.reformatCommit)(commit.message);
             return {
                 hash: commit.hash.substr(0, 8),
@@ -7085,9 +7085,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseStatusSummary = exports.StatusSummary = void 0;
 const utils_1 = __webpack_require__(532);
 const FileStatusSummary_1 = __webpack_require__(671);
-/**
- * The StatusSummary is returned as a response to getting `git().status()`
- */
 class StatusSummary {
     constructor() {
         this.not_added = [];
@@ -7096,32 +7093,14 @@ class StatusSummary {
         this.deleted = [];
         this.modified = [];
         this.renamed = [];
-        /**
-         * All files represented as an array of objects containing the `path` and status in `index` and
-         * in the `working_dir`.
-         */
         this.files = [];
         this.staged = [];
-        /**
-         * Number of commits ahead of the tracked branch
-         */
         this.ahead = 0;
-        /**
-         *Number of commits behind the tracked branch
-         */
         this.behind = 0;
-        /**
-         * Name of the current branch
-         */
         this.current = null;
-        /**
-         * Name of the branch being tracked
-         */
         this.tracking = null;
+        this.detached = false;
     }
-    /**
-     * Gets whether this StatusSummary represents a clean working branch.
-     */
     isClean() {
         return !this.files.length;
     }
@@ -7195,6 +7174,7 @@ const parsers = new Map([
             result.tracking = regexResult && regexResult[1];
             regexResult = onEmptyBranchReg.exec(line);
             result.current = regexResult && regexResult[1] || result.current;
+            result.detached = /\(no branch\)/.test(line);
         }]
 ]);
 const parseStatusSummary = function (text) {

@@ -20,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "~1.6.0",
-    "commander": "~8.3.0",
+    "commander": "~9.0.0",
     "mustache": "~4.2.0",
     "prepend-file": "~2.0.0",
     "simple-git": "~3.1.0"

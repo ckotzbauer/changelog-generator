@@ -1,2 +1,7 @@
-tsconfig.json
+.github
 src
+
+action.yml
+jest.json
+renovate.json
+tsconfig.json

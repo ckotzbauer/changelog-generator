@@ -2,7 +2,7 @@
   "name": "@code-chris/changelog-generator",
   "version": "2.7.3",
   "description": "",
-  "main": "dist-action/index.js",
+  "main": "dist/index.js",
   "bin": {
     "changelog-generator": "bin/changelog-generator"
   },
@@ -14,16 +14,15 @@
     "start": "node bin/changelog-generator",
     "build": "tsc --build tsconfig.json",
     "test": "jest --config jest.json",
-    "package": "ncc build src/action.ts -o dist-action"
+    "package": "ncc build src/action.ts -o dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@actions/core": "~1.6.0",
-    "commander": "~9.0.0",
     "mustache": "~4.2.0",
-    "prepend-file": "~2.0.0",
-    "simple-git": "~3.3.0"
+    "prepend-file": "~2.0.1",
+    "simple-git": "~3.4.0"
   },
   "devDependencies": {
     "@types/jest": "27.4.1",

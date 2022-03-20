@@ -1,3 +1,38 @@
+## Version 3.0.0 (2022-03-20)
+
+### Features and improvements
+
+* [[`5f5e0d1e`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5f5e0d1e)] - **feat**: remove npm-package
+
+### Build and testing
+
+* [[`895ec46d`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/895ec46d)] - **build**: add npmignore
+
+### Dependency updates
+
+* [[`333c4f6b`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/333c4f6b)] - **deps**: bump lannonbr&#x2F;issue-label-manager-action
+* [[`508e337c`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/508e337c)] - **deps**: bump actions&#x2F;checkout from 2 to 3
+* [[`1aa27a8f`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/1aa27a8f)] - **deps**: update pascalgn&#x2F;automerge-action commit hash to 0ba0473 (#116)
+* [[`da11aa5d`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/da11aa5d)] - **deps**: update pascalgn&#x2F;size-label-action commit hash to a4655c4 (#117)
+* [[`e1e7d342`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e1e7d342)] - **deps**: update dependency @types&#x2F;node to v16.11.26 (#118)
+* [[`687594d2`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/687594d2)] - **deps**: update ckotzbauer&#x2F;actions-toolkit action to v0.7.0 (#120)
+* [[`f3c98c1f`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/f3c98c1f)] - **deps**: update dependency simple-git to ~3.2.0 (#121)
+* [[`2d5611b7`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/2d5611b7)] - **deps**: update dependency typescript to v4.6.2 (#122)
+* [[`cf635749`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/cf635749)] - **deps**: update jest monorepo (#119)
+* [[`77eaaa13`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/77eaaa13)] - **deps**: bump actions&#x2F;setup-node from 2.5.1 to 3
+* [[`5cc839eb`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/5cc839eb)] - **deps**: update dependency commander to v9
+* [[`417e9ee1`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/417e9ee1)] - **deps**: update dependency simple-git to v3
+* [[`025eebd5`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/025eebd5)] - **deps**: update dependency ts-jest to v27.1.3
+* [[`4358940b`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/4358940b)] - **deps**: update dependency @types&#x2F;node to v16.11.21 (#108)
+* [[`01df8695`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/01df8695)] - **deps**: update dependency jest to v27.4.7 (#109)
+* [[`eb152b63`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/eb152b63)] - **deps**: update dependency typescript to v4.5.5 (#111)
+* [[`c3b557ba`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/c3b557ba)] - **deps**: update ckotzbauer&#x2F;actions-toolkit action to v0.5.0 (#112)
+
+### Common changes
+
+* [[`e213e8b4`](https://github.com/ckotzbauer&#x2F;changelog-generator/commit/e213e8b4)] - **chore**: update dependency simple-git to 3.3.0 [security]
+
+
 ## Version 2.7.3 (2022-01-24)
 
 ### Dependency updates

@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "~1.8.0",
+    "@actions/core": "~1.9.0",
     "mustache": "~4.2.0",
     "prepend-file": "~2.0.1",
     "simple-git": "~3.10.0"

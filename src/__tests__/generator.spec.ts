@@ -1,4 +1,5 @@
 import { getCategoryHeadline, reformatCommit } from "../generator";
+import { describe, it, expect } from '@jest/globals';
 
 describe("generator", () => {
     describe("reformatCommit", () => {

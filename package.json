@@ -22,7 +22,7 @@
     "@actions/core": "1.10.0",
     "mustache": "~4.2.0",
     "prepend-file": "~2.0.1",
-    "simple-git": "~3.18.0"
+    "simple-git": "~3.19.0"
   },
   "devDependencies": {
     "@jest/types": "29.5.0",

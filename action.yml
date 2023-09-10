@@ -34,7 +34,7 @@ inputs:
     description: 'github org-repo handle'
     required: true
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
 branding:
   icon: 'search'  

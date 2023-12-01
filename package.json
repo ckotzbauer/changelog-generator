@@ -23,7 +23,7 @@
     "mustache": "~4.2.0",
     "prepend-file": "~2.0.1",
     "semver": "~7.5.0",
-    "simple-git": "~3.20.0"
+    "simple-git": "~3.21.0"
   },
   "devDependencies": {
     "@jest/types": "29.6.3",
